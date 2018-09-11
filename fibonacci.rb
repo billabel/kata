@@ -1,5 +1,9 @@
 # find the nth value in the fibonacci squence
-#
+
+# analyze processing time
+require 'Benchmark'
+time = Benchmark.realtime do
+
 # get the user input for n, the nth value to find
 n = gets.to_i
 
@@ -18,3 +22,7 @@ def fib(n)
 end
 
 puts fib(n).to_s
+
+end
+
+puts time.to_s + " elapsed time"
