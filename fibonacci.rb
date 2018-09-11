@@ -25,13 +25,13 @@ def fib(n)
 # if n < 0, output the sum of the previous two values
   elsif n < 0
     a = 0
-    b = 1
+    b = -1
     n.abs.times do
       c = a
       a = b
       b = c + b
     end
-    return (a * (-1)**n)
+    return a
   end
 end
 
